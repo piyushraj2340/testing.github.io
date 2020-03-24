@@ -4,12 +4,45 @@
 <title>Login Page </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
+ @font-face {
+	 font-family: name;
+	 src: url(media/font/HAP.TTF);
+	}
  
  @media screen and (max-width: 2000px) {
-   body {
+  body {
+  font-family: name;
   padding: 5px;
+  background-color: #579abc;
  }
  
+h2 {
+	  background-color: #32cbf0;
+	  color: red;
+	  letter-spacing: 2px;
+	  font-size: 25px;
+	  width: auto;
+	  padding: 10px; 
+	  text-align: center;
+	  margin: 0 10%;
+  }
+ 
+  header {
+	 background-color: #e1e90f;
+	 padding-left: 30px;
+	 position: sticky;
+	 top: 0px;
+	}
+	
+  #header {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 50px;
+	padding: 5px;
+	font-family: testing;
+	color: black;
+                  
+ }
  form {
   display: block;
   width: 350px;
@@ -44,6 +77,7 @@
   border: 2px solid #ff0000;
   border-radius: 10px;
   border-color: #ff0000 #aa0000 #aa0000 #ff0000;
+  font-family: arial;
  }
  
  #leop {
@@ -75,7 +109,30 @@
   display: none;
  }
 
- 
+ .nav {
+	display: inline-block;
+	padding: 10px 10px 1px 10px;
+	color: #fff;
+  }
+			 
+  input[type=search] {
+	padding-left: 25px;
+	border: 1px solid #A13D4D;
+    border-radius: 30px; 
+	background-color: #fff;
+	 background-image:
+		url("file:///F:/Piyush%20Raj/Hotel%20Apna%20Plaza/assets/media/Search-icon.png");
+	background-repeat: no-repeat;
+	background-size: 17px 17px;
+	background-position: 4px;
+	height: 25px;
+  }
+  
+  input[type=search]:focus {
+    border: 1px solid #A13D4D;
+	border-radius: 10px;
+	outline: 1px solid #A13D4D;
+  }
  
  @media screen and (max-width: 480px) {
  
@@ -147,6 +204,19 @@
 </style>
 </head>
 <body>
+<header>
+ <a href="https://piyushraj2340.github.io/testing.github.io/" id="header">Testing</a>
+  <nav>
+   <ul>
+   <a href = "#"> <li  class = "nav">HOME</li></a> | <!-- HOME-NAV -->
+	 <a href = "#"> <li  class = "nav">GALLERY</li></a> |  <!-- GALLERY-NAV -->
+	 <a href = "#"> <li  class = "nav">CONTACTS</li></a> | <!-- CONTACTS-NAV -->
+	 <a href = "#"> <li  class = "nav">ABOUT</li></a> <!-- ABOUT-NAV -->
+	 <li class = "nav search "><input type = "search" name = "search" placeholder = "search.." id="search"/></li> <!-- INPUT[TYPE=SEARCH]  -->
+    </ul>
+  </nav>
+  </header>
+ 
  <div id="menu" onclick=menu() >
    <div class="menu-div"></div>
    <div class="menu-div"></div>
