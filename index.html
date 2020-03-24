@@ -28,7 +28,7 @@
 	text-decoration: none;
 	font-size: 50px;
 	padding: 5px;
-	font-family: name;
+	font-family: arial;
 	color: black;
                   
  }
@@ -97,6 +97,41 @@
  ul {
   display: none;
  }
+	 
+	 #float-left-nav {
+    position: sticky;
+	top: 55px;
+    width: 100%;
+	background-color: #55ee30;
+	height: 50px
+   }
+   #float-left-nav ul {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+	 height: 46px;
+   }
+   #float-left-nav li {
+     display: inline-block;
+     position: relative;
+	 left: 37.5%;
+	 padding: 0px;
+	 margin: 0px;
+	 float: left;
+	 height: auto;
+   }
+   #float-left-nav a {
+     display: inline-block;
+     padding: 16px;
+     text-decoration: none;
+     color: blue;
+	 }
+   #float-left-nav li a:hover {
+     background-color: blue;
+	 font-family: cursive;
+	 color: #55ee30;
+	 font-size: 20px;
+   }
 
  .nav {
 	display: inline-block;
@@ -195,7 +230,7 @@
 <body>
 <header>
  <a href="https://piyushraj2340.github.io/testing.github.io/" id="header">Testing</a>
-  <nav>
+  <nav id="float-left-nav">
    <ul>
    <a href = "#"> <li  class = "nav">HOME</li></a> | <!-- HOME-NAV -->
 	 <a href = "#"> <li  class = "nav">GALLERY</li></a> |  <!-- GALLERY-NAV -->
